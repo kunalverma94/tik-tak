@@ -1,0 +1,90 @@
+:root {
+    --fcc: #fff;
+    --bcc: black;
+}
+
+html {
+    background: var(--bcc);
+    user-select: none;
+}
+
+#gcc {
+    background: url(https://random.imagecdn.app/800/600);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+
+.block {
+    border: solid 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 900;
+    min-width: 90px;
+    min-height: 90px;
+    color: var(--fcc);
+}
+#status {
+    position: absolute;
+    color: var(--fcc);
+    font-family: cursive;
+}
+#reload {
+    color: var(--fcc);
+    position: absolute;
+    width: 294px;
+    height: 294px;
+    font-size: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000a1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.refresh:hover {
+    transition: 0.9s;
+    transform: rotate(360deg);
+}
+
+#play-area {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 270px;
+    height: 270px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.block[index="1"] {
+    border-radius: 10px 0 0 0;
+}
+
+.block[index="3"] {
+    border-radius: 0 10px 0 0;
+}
+
+.block[index="9"] {
+    border-radius: 0 0 10px 0;
+}
+
+.block[index="7"] {
+    border-radius: 0 0 0 10px;
+}
