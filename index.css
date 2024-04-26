@@ -20,7 +20,11 @@ html {
     left: 0;
     opacity: 0.3;
 }
-
+@media only screen and (max-width: 600px) {
+    #gcc {
+        background: url(https://random.imagecdn.app/360/640);
+    }
+  }
 .block {
     border: solid 4px;
     display: flex;
